@@ -1,4 +1,4 @@
-version: 6
+version: 7
 extensions:
 - name: hello-world
   version: 0.0.2
@@ -8,7 +8,7 @@ extensions:
       #!/bin/sh
       echo "Hello, World!"
 - name: spotbugs-maven
-  version: 0.0.4
+  version: 0.0.5
   description: Run's SpotBugs against a Maven project and attaches the output to the build
   parameters:
   - name: spotbugs-version
