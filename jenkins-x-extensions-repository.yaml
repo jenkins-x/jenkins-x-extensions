@@ -10,4 +10,7 @@ extensions:
   version: 0.0.1
   description: Run's SpotBugs against a Maven project and attaches the output to the build
   script: |
+    #!/bin/sh
+    set -x
     mvn com.github.spotbugs:spotbugs-maven-plugin:${SPOTBUGS_VERSION}:spotbugs
+    set +x
