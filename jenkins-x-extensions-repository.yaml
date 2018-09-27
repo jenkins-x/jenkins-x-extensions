@@ -1,16 +1,18 @@
-version: 5
+version: 6
 extensions:
 - name: hello-world
-  version: 0.0.1
+  version: 0.0.2
   description: Says Hello, World!
-  script: |
-    #!/bin/sh
-    echo "Hello, World!"
+  post:
+    always: |
+      #!/bin/sh
+      echo "Hello, World!"
 - name: spotbugs-maven
-  version: 0.0.3
+  version: 0.0.4
   description: Run's SpotBugs against a Maven project and attaches the output to the build
-  script: |
-    #!/bin/sh
-    set +x
-    mvn package com.github.spotbugs:spotbugs-maven-plugin:${SPOTBUGS_VERSION}:spotbugs
-    set -x
+  post:
+    always: |
+      #!/bin/sh
+      set +x
+      mvn package com.github.spotbugs:spotbugs-maven-plugin:${SPOTBUGS_VERSION}:spotbugs
+      set -x
