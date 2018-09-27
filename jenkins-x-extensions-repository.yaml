@@ -4,9 +4,10 @@ extensions:
   version: 0.0.2
   description: Says Hello, World!
   post:
-    always: |
-      #!/bin/sh
-      echo "Hello, World!"
+    always:
+      script: |
+        #!/bin/sh
+        echo "Hello, World!"
 - name: spotbugs-maven
   version: 0.0.5
   description: Run's SpotBugs against a Maven project and attaches the output to the build
