@@ -1,3 +1,4 @@
+version: 0.0.1
 extensions:
 - name: hello-world
   version: 0.0.1
