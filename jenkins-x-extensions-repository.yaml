@@ -14,5 +14,5 @@ extensions:
     always: |
       #!/bin/sh
       set +x
-      mvn package com.github.spotbugs:spotbugs-maven-plugin:${SPOTBUGS_VERSION}:spotbugs
+      mvn compile com.github.spotbugs:spotbugs-maven-plugin:${SPOTBUGS_VERSION}:spotbugs
       set -x
