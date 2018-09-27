@@ -7,7 +7,7 @@ extensions:
     #!/bin/sh
     echo "Hello, World!"
 - name: spotbugs-maven
-  version: 0.0.1
+  version: 0.0.2
   description: Run's SpotBugs against a Maven project and attaches the output to the build
   script: |
     #!/bin/sh
