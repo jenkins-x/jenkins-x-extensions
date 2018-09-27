@@ -10,6 +10,9 @@ extensions:
 - name: spotbugs-maven
   version: 0.0.4
   description: Run's SpotBugs against a Maven project and attaches the output to the build
+  parameters:
+  - name: spotbugs-version
+    description: The version of SpotBugs to use
   post:
     always: |
       #!/bin/sh
