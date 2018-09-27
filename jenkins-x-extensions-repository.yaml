@@ -14,8 +14,6 @@ extensions:
   - name: spotbugs-version
     description: The version of SpotBugs to use
   post:
-    always: |
-      #!/bin/sh
-      set -x
-      mvn compile com.github.spotbugs:spotbugs-maven-plugin:${SPOTBUGS_VERSION}:spotbugs
-      set +x
+    always:
+      bash: |
+        mvn compile com.github.spotbugs:spotbugs-maven-plugin:${SPOTBUGS_VERSION}:spotbugs
