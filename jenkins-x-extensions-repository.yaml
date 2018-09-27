@@ -1,5 +1,6 @@
 extensions:
 - name: HelloWorld
+  version: 0.0.1
   description: Says Hello, World!
   script: |
     #!/bin/sh
