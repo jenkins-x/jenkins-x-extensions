@@ -1,4 +1,4 @@
-version: 11
+version: 12
 extensions:
 - name: helloWorld
   version: 0.0.4
@@ -21,7 +21,7 @@ extensions:
   script: |
     mvn compile com.github.spotbugs:spotbugs-maven-plugin:${SPOTBUGS_VERSION}:spotbugs
 - name: spotbugsPublish
-  version: 0.0.1
+  version: 0.0.2
   description: Publishes SpotBugs reports to GitHub pges
   parameters:
   - name: spotbugsProvider
