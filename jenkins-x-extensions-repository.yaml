@@ -1,4 +1,4 @@
-version: 10
+version: 11
 extensions:
 - name: helloWorld
   version: 0.0.4
@@ -20,3 +20,11 @@ extensions:
     defaultValue: 3.1.6
   script: |
     mvn compile com.github.spotbugs:spotbugs-maven-plugin:${SPOTBUGS_VERSION}:spotbugs
+- name: spotbugsPublish
+  version: 0.0.1
+  description: Publishes SpotBugs reports to GitHub pges
+  parameters:
+  - name: spotbugsProvider
+    description: The provider to use to publish SpotBugs reports
+  script: |
+    jx step collect --provider=${SPOTBUGS_PROVIDER} --pattern=target/spotbugsXml.xml --build-number=${BUILD_NUMBER} --classifier=spotbugs
