@@ -27,4 +27,4 @@ extensions:
   - name: spotbugsProvider
     description: The provider to use to publish SpotBugs reports
   script: |
-    jx step collect --provider=${SPOTBUGS_PROVIDER} --pattern=target/spotbugsXml.xml --build-number=${BUILD_NUMBER} --classifier=spotbugs
+    jx step collect --provider=${SPOTBUGS_PROVIDER} --pattern=target/spotbugsXml.xml --classifier=spotbugs
