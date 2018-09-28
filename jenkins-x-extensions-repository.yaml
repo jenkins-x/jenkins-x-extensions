@@ -1,7 +1,7 @@
-version: 8
+version: 9
 extensions:
-- name: hello-world
-  version: 0.0.3
+- name: helloWorld
+  version: 0.0.4
   description: Says Hello, World!
   # Post is the default
   when: post
@@ -11,11 +11,11 @@ extensions:
   type: bash
   script: |
     echo "Hello, World!"
-- name: spotbugs-maven
-  version: 0.0.6
+- name: spotbugsMaven
+  version: 0.0.7
   description: Run's SpotBugs against a Maven project and attaches the output to the build
   parameters:
-  - name: spotbugs-version
+  - name: spotbugsVersion
     description: The version of SpotBugs to use
   script: |
     mvn compile com.github.spotbugs:spotbugs-maven-plugin:${SPOTBUGS_VERSION}:spotbugs
