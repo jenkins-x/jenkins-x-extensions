@@ -1,7 +1,7 @@
-version: 12
+version: 13
 extensions:
 - name: helloWorld
-  version: 0.0.4
+  version: 0.0.5
   description: Says Hello, World!
   # Post is the default
   when: 
