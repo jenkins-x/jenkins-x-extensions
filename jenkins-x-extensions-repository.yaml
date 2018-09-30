@@ -4,7 +4,8 @@ extensions:
   version: 0.0.4
   description: Says Hello, World!
   # Post is the default
-  when: post
+  when: 
+    - post
   # Always is the default
   given: always
   # bash is the default, 
