@@ -45,4 +45,4 @@ extensions:
   - name: jacocoProvider
     description: The provider to use to publish Jacoco reports
   script: |
-    jx step collect --provider=${JACOCO_PROVIDER} --pattern=target/site/jacoco/jacoco.xml --classifier=spotbugs
+    jx step collect --provider=${JACOCO_PROVIDER} --pattern=target/site/jacoco/jacoco.xml --classifier=jacoco
