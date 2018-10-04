@@ -1,4 +1,4 @@
-version: 17
+version: 18
 extensions:
 - name: helloWorld
   namespace: jx
@@ -15,7 +15,7 @@ extensions:
   script: |
     echo "Hello, World!"
 - name: spotbugsMaven
-  namepspace: jx
+  namespace: jx
   uuid: 9e5d081e-c7c7-11e8-a8d5-f2801f1b9fd1
   version: 0.0.13
   description: Runs SpotBugs against a Maven project and attaches the output to the build
