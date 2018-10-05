@@ -1,5 +1,5 @@
 extensions:
   - extension: github.com/jenkins-x/ext-jacoco
-    tag: latest
+    version: latest
   - extension: github.com/jenkins-x/ext-spotbugs
-    tag: 0.0.1
+    version: 0.0.1
