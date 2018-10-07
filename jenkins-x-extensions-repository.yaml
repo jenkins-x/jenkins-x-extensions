@@ -1,5 +1,5 @@
-extensions:
-  - extension: github.com/jenkins-x/ext-jacoco
-    version: latest
-  - extension: github.com/jenkins-x/ext-spotbugs
-    version: 0.0.2
+remotes:
+  - remote: github.com/jenkins-x/ext-jacoco
+    tag: master
+  - remote: github.com/jenkins-x/ext-spotbugs
+    tag: v0.0.2
