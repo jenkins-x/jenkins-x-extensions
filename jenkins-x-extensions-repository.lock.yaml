@@ -45,14 +45,6 @@ extensions:
   when:
   - onInstall
 - children:
-  - 89cbaa0c-c954-11e8-a8d5-f2801f1b9fd1
-  - 9e5d081e-c7c7-11e8-a8d5-f2801f1b9fd1
-  description: Runs a selection of code quality tools against a Java Maven project
-  name: mavenCodeQuality
-  namespace: jx
-  uuid: 28aa250e-ca04-11e8-a8d5-f2801f1b9fd1
-  version: 0.0.7
-- children:
   - dbaa4866-cb29-11e8-a8d5-f2801f1b9fd1
   - 9e5d0968-c7c7-11e8-a8d5-f2801f1b9fd1
   description: Runs Spotbugs against a Maven project, attaches the output to the build,
@@ -96,4 +88,12 @@ extensions:
   version: 0.0.5
   when:
   - onInstall
-version: 38
+- children:
+  - 89cbaa0c-c954-11e8-a8d5-f2801f1b9fd1
+  - 9e5d081e-c7c7-11e8-a8d5-f2801f1b9fd1
+  description: Runs a selection of code quality tools against a Java Maven project
+  name: mavenCodeQuality
+  namespace: jx
+  uuid: 28aa250e-ca04-11e8-a8d5-f2801f1b9fd1
+  version: 0.0.9
+version: 39
