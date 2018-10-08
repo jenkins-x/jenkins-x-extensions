@@ -51,7 +51,7 @@ extensions:
   name: mavenCodeQuality
   namespace: jx
   uuid: 28aa250e-ca04-11e8-a8d5-f2801f1b9fd1
-  version: 0.0.5
+  version: 0.0.7
 - children:
   - dbaa4866-cb29-11e8-a8d5-f2801f1b9fd1
   - 9e5d0968-c7c7-11e8-a8d5-f2801f1b9fd1
@@ -96,4 +96,4 @@ extensions:
   version: 0.0.5
   when:
   - onInstall
-version: 36
+version: 38
