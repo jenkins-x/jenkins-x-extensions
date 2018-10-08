@@ -45,9 +45,7 @@ extensions:
   when:
   - onInstall
 - children:
-  - c0deb7c8-c954-11e8-a8d5-f2801f1b9fd1
-  - 9e5d0a9e-c7c7-11e8-a8d5-f2801f1b9fd1
-  - 9e5d0e40-c7c7-11e8-a8d5-f2801f1b9fd1
+  - 89cbaa0c-c954-11e8-a8d5-f2801f1b9fd1
   description: Runs a selection of code quality tools against a Java Maven project
   name: mavenCodeQuality
   namespace: jx
@@ -76,4 +74,4 @@ extensions:
     jx step collect --provider=${JX_SPOTBUGS_MAVEN_PUBLISH_PROVIDER} --pattern=target/spotbugsXml.xml --classifier=spotbugs
   uuid: 9e5d0968-c7c7-11e8-a8d5-f2801f1b9fd1
   version: 0.0.2
-version: 31
+version: 32
