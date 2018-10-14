@@ -1,7 +1,7 @@
 all: build
 
 build:
-	jx update extensions repository
+	jx upgrade extensions repository
 
 tag:
 	git add --all
