@@ -53,6 +53,7 @@ pipeline {
         }
         steps {
           dir ('/home/jenkins/go/src/github.com/jenkins-x/jenkins-x-extensions') {
+            sh 'make tag'
             sh 'jx step changelog --version v\$(cat VERSION)'
 
             // Run updatebot to update other repos
