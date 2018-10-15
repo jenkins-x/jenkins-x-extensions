@@ -43,7 +43,7 @@ pipeline {
             sh "echo \$(jx-release-version) > VERSION"
           }
           dir ('/home/jenkins/go/src/github.com/jenkins-x/jenkins-x-extensions') {
-            sh "make build"
+            sh "VERSION=\$(cat VERSION) make build"
           }
         }
       }
