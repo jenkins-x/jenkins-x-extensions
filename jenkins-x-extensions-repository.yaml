@@ -4,4 +4,4 @@ remotes:
   - remote: github.com/jenkins-x/ext-spotbugs
     tag: v0.0.21
   - remote: github.com/jenkins-x/haha
-    tag: v0.0.10
+    tag: v0.0.11
