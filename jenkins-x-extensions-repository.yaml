@@ -1,5 +1,3 @@
 remotes:
   - remote: github.com/jenkins-x/ext-java-code-quality
-    tag: v0.0.51
-  - remote: github.com/jenkins-x/ext-spotbugs
-    tag: v0.0.33
+    tag: v0.0.64
